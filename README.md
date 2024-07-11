@@ -2,7 +2,7 @@
 It is a final part of my project. I created an application for traders on steam market. This application was written in Android java. You can add items which you want to observe. Item price updates time depends on how many items you have added to observe. It helps to buy and sell an items in optimal moments. 
 
 # About:
-- I created this app to make better decisions on Steam market. In this code i used Retrofit library. I had to create my own database using MariaDB and phpmyadmin. Firstly import items to your database using 'Steam_Items_Importer' next install 'Steam_price_updaterSteam_price_updater' on the server (preffered). Finaly download 'Steam Tracker' to track items prices.
+- I created this app to make better decisions on Steam market. In this code i used Retrofit library. I had to create my own database using MariaDB and phpmyadmin. Firstly import items to your database using 'Steam_Items_Importer' next install 'Steam_price_updater' on the server (preffered). Finaly download 'Steam Tracker' to track items prices.
 
 # Example:
 ![Screenshot_20240711-195335_Steam Tracker](https://github.com/AdamBan-Programmer/Steam-Tracker---Android/assets/137770072/f0792467-d17d-4010-9ec1-e318722a61f0)
