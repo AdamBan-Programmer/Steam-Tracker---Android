@@ -1,4 +1,4 @@
-# Steam Items Importer:
+# Steam Tracker:
 It is a final part of my project. I created an application for traders on steam market. This application was written in Android java. You can add items which you want to observe. Item price updates time depends on how many items you have added to observe. It helps to buy and sell an items in optimal moments. 
 
 # About:
