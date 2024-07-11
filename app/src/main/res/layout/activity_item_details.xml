@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2a475e"
+    tools:context=".Activities.ItemDetailsActivity">
+
+    <TextView
+        android:id="@+id/pageTitleTV"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="#1b2838"
+        android:gravity="center_vertical"
+        android:text="Item Details:"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:translationZ="1dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/itemNameTV"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/allTimePricesBT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:backgroundTint="#256285"
+        android:text="All"
+        android:textColor="@color/white">
+    </Button>
+
+    <Button
+        android:id="@+id/todayPricesBT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:backgroundTint="#256285"
+        android:text="Today"
+        android:textColor="@color/white">
+    </Button>
+
+    <Button
+        android:id="@+id/weeklyPricesBT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:backgroundTint="#256285"
+        android:text="Week"
+        android:textColor="@color/white">
+    </Button>
+
+    <Button
+        android:id="@+id/monthlyPricesBT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:backgroundTint="#256285"
+        android:text="Month"
+        android:textColor="@color/white">
+    </Button>
+
+    <TextView
+        android:id="@+id/selectedPriceTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="right|center_vertical"
+        android:textStyle="bold"
+        android:textColor="@color/white">
+    </TextView>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/itemPriceChart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/itemImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/item_image_view">
+
+        <ImageView
+            android:id="@+id/itemImageIV"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:backgroundTint="@color/white">
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/itemPriceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/price_view">
+
+        <TextView
+            android:id="@+id/itemPriceTitleTV"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Price:"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#c7c7c7">
+        </TextView>
+
+        <TextView
+            android:id="@+id/itemPriceTV"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/white">
+        </TextView>
+
+        <TextView
+            android:id="@+id/priceUpdateTV"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white">
+        </TextView>
+
+        <Button
+            android:id="@+id/openRecentPriceLogsListBT"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="View prices:"
+            android:textStyle="bold"
+            android:backgroundTint="#1b2838"
+            android:textColor="@color/white">
+        </Button>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recentPriceLogsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@drawable/price_view">
+
+        <TextView
+            android:id="@+id/pricesListTitleTV"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:text="Prices:"
+            android:textColor="@color/white">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/closeRecentPriceLogsListIB"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/btn_dialog">
+        </ImageButton>
+
+
+        <ScrollView
+            android:id="@+id/pricesListScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/recentPriceLogsListTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/white">
+        </TextView>
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>

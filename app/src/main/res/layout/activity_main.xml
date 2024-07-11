@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2a475e"
+    tools:context=".Activities.MainActivity">
+
+    <TextView
+        android:id="@+id/pageTitleTV"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="#1b2838"
+        android:gravity="center_vertical"
+        android:text="Steam Market"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:translationZ="1dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/itemsCounterTV"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="#1b2838"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:translationZ="1dp">
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/openOptionsBarIB"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/menu_icon"
+        android:background="#1b2838"
+        android:translationZ="1dp">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/updateItemsIB"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/ic_menu_rotate"
+        android:background="#1b2838"
+        android:translationZ="1dp">
+    </ImageButton>
+
+    <ScrollView
+        android:id="@+id/observedItemsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/observedItemsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/optionsBarView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:background="#1b2838"
+        android:translationZ="1dp">
+
+        <Button
+            android:id="@+id/settingsModeBT"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Settings"
+            android:backgroundTint="#2a475e" />
+
+        <Button
+            android:id="@+id/addNewItemModeBT"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Add new Item"
+            android:backgroundTint="#2a475e"/>
+
+        <Button
+            android:id="@+id/topMoversModeBT"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Top movers"
+            android:backgroundTint="#2a475e"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AppSettingsActivity">
+
+    <TextView
+        android:id="@+id/pageTitleTV"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Settings"
+        android:translationZ="10dp"
+        />
+
+    <EditText
+        android:id="@+id/dbLoginET"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeMinTextSize="12sp"
+        android:singleLine="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textCursorDrawable="@color/white"
+        android:backgroundTint="@color/white"
+        android:text="login" />
+
+    <TextView
+        android:id="@+id/dbLoginTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Set Database Login:"
+        />
+
+    <EditText
+        android:id="@+id/dbPasswordET"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeMinTextSize="12sp"
+        android:singleLine="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="password"
+        android:textCursorDrawable="@color/white"
+        android:backgroundTint="@color/white"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/dbPasswordTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Set Database Password:"
+        />
+
+    <EditText
+        android:id="@+id/dbIpET"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeMinTextSize="12sp"
+        android:singleLine="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textCursorDrawable="@color/white"
+        android:backgroundTint="@color/white"
+        android:text="ip" />
+
+    <TextView
+        android:id="@+id/dbIpTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Set Database ip:"
+        />
+
+    <EditText
+        android:id="@+id/dbPortET"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeMinTextSize="12sp"
+        android:singleLine="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textCursorDrawable="@color/white"
+        android:backgroundTint="@color/white"
+        android:text="port" />
+
+    <TextView
+        android:id="@+id/dbPortTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Set Database port:"
+        />
+
+    <EditText
+        android:id="@+id/dbNameET"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeMinTextSize="12sp"
+        android:singleLine="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textCursorDrawable="@color/white"
+        android:backgroundTint="@color/white"
+        android:text="name" />
+
+    <TextView
+        android:id="@+id/dbNameTV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Set Database name:"
+        android:textCursorDrawable="@color/white"
+        android:backgroundTint="@color/white"
+        />
+
+
+    <Button
+        android:id="@+id/saveBT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:backgroundTint="#2a475e"
+        android:textSize="15dp"/>
+
+</RelativeLayout>

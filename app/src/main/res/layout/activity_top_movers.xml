@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2a475e"
+    tools:context=".Activities.TopMoversActivity">
+
+    <TextView
+        android:id="@+id/pageTitleTV"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="#1b2838"
+        android:gravity="center_vertical"
+        android:text="Top Movers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:translationZ="1dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/bestTrendsTitleTV"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:text="Best Trend:"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/worstTrendsTitleTV"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:text="Worst Trend:"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/bestTrendsSection"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/best_trends_view">
+    <ScrollView
+        android:id="@+id/bestTrendsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:id="@+id/bestTrendsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/worstTrendsSection"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/worst_trends_view">
+        <ScrollView
+            android:id="@+id/worstTrendsScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+            <RelativeLayout
+                android:id="@+id/worstTrendsView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>
