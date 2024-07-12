@@ -175,11 +175,11 @@ public class ItemDetailsActivity extends AppCompatActivity implements ActivityBu
         }
 
         if (id == weeklyPricesBT.getId()) {
-            displayTimeRangedPrices(ChartModeEnum.WEEKLY);
+            displayTimeRangedPrices(ChartModeEnum.WEEK);
         }
 
         if (id == monthlyPricesBT.getId()) {
-            displayTimeRangedPrices(ChartModeEnum.MONTHLY);
+            displayTimeRangedPrices(ChartModeEnum.MONTH);
         }
 
         if (id == openRecentPriceLogsListBT.getId()) {
@@ -225,7 +225,7 @@ public class ItemDetailsActivity extends AppCompatActivity implements ActivityBu
                         break;
                     }
 
-                    case WEEKLY: {
+                    case WEEK: {
                         if (currentDay.getDayOfYear() - date.getDayOfYear() < 7) {
                             datesArray.add(observedItemDetails.getLogDateArray().get(i));
                             pricesArray.add(String.valueOf(observedItemDetails.getPriceArray().get(i)));
@@ -233,7 +233,7 @@ public class ItemDetailsActivity extends AppCompatActivity implements ActivityBu
                         break;
                     }
 
-                    case MONTHLY: {
+                    case MONTH: {
                         if (currentDay.getDayOfYear() - date.getDayOfYear() < 30) {
                             datesArray.add(observedItemDetails.getLogDateArray().get(i));
                             pricesArray.add(String.valueOf(observedItemDetails.getPriceArray().get(i)));
@@ -254,7 +254,7 @@ public class ItemDetailsActivity extends AppCompatActivity implements ActivityBu
         for (int i = 0; i < observedItemDetails.getLogDateArray().size(); i++) {
             DateFormat date = dateFormatController.getDateFromString(observedItemDetails.getLogDateArray().get(i));
             if (currentDay.getDayOfYear() == date.getDayOfYear()) {
-                String price = String.valueOf(observedItemDetails.getPriceArray().get(i));
+                String price = String.format("%.02f",(observedItemDetails.getPriceArray().get(i)));
                 String refresh_date = observedItemDetails.getLogDateArray().get(i);
                 priceLog += priceLogIndex + ")   " + price + "zł     -     " + refresh_date + "\n";
                 priceLogIndex++;

@@ -124,7 +124,7 @@ public class NewItemToObserveActivity extends AppCompatActivity implements Activ
                 listedItemsCount++;
             }
         }
-        updateObservedItemsView();
+        updateItemsView();
         return listedItemsCount;
     }
 
@@ -141,7 +141,7 @@ public class NewItemToObserveActivity extends AppCompatActivity implements Activ
         itemsPanelsList.put(item, panel);
     }
 
-    private void updateObservedItemsView() {
+    private void updateItemsView() {
         ViewTreeObserver viewTreeObserver = searchedItemsView.getViewTreeObserver();
         viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
